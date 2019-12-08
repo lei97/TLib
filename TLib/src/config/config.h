@@ -50,6 +50,11 @@ namespace tlib {
         {
             throw;      //TODO: 异常处理类待整理，暂定
         }
+        string data;
+        while (!ifs.eof())
+        {
+            ifs >> data;
+        }
     }
 }
 #endif
