@@ -70,7 +70,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>.\third_party\json;..;$(IncludePath)</IncludePath>
+    <IncludePath>.\third_party\json;.\third_party\glog;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -126,10 +126,28 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="src\config\config.h" />
+    <ClInclude Include="third_party\glog\config.h" />
+    <ClInclude Include="third_party\glog\glog\logging.h" />
+    <ClInclude Include="third_party\glog\glog\log_severity.h" />
+    <ClInclude Include="third_party\glog\glog\raw_logging.h" />
+    <ClInclude Include="third_party\glog\glog\stl_logging.h" />
+    <ClInclude Include="third_party\glog\glog\vlog_is_on.h" />
+    <ClInclude Include="third_party\glog\stacktrace.h" />
+    <ClInclude Include="third_party\glog\symbolize.h" />
+    <ClInclude Include="third_party\glog\utilities.h" />
+    <ClInclude Include="third_party\glog\windows\dirent.h" />
     <ClInclude Include="third_party\json\json.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="third_party\glog\demangle.cc" />
+    <ClCompile Include="third_party\glog\logging.cc" />
+    <ClCompile Include="third_party\glog\port.cc" />
+    <ClCompile Include="third_party\glog\raw_logging.cc" />
+    <ClCompile Include="third_party\glog\signalhandler.cc" />
+    <ClCompile Include="third_party\glog\symbolize.cc" />
+    <ClCompile Include="third_party\glog\utilities.cc" />
+    <ClCompile Include="third_party\glog\vlog_is_on.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

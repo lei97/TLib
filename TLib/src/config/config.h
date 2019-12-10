@@ -11,6 +11,7 @@ function: creat Config of class
 #include <map>
 #include <fstream>
 #include <iostream>
+#include <sstream>
 #include <json.h>
 
 using json = nlohmann::json;
@@ -61,16 +62,18 @@ namespace tlib {
         {
             throw;      //TODO: 异常处理类待整理，暂定
         }
-        ifs.seekg(0, std::ios::end); //设置文件指针到文件流的尾部
-        std::streampos size = ifs.tellg(); //读取文件指针的位置
-        ifs.seekg(0);
-        ifs.read((char*)&m_fileData, size);     //TODO：文件流转字符串代完成 frist
+        std::ostringstream buf;
+        char ch;
+        while (buf && ifs.get(ch))
+        {
+            buf.put(ch);
+        }
         ifs.close();
     }
 
     void Config::parseData()
     {
-        m_data = m_fileData;      //TODO
+        m_data = json::parse(m_fileData);      //TODO
     }
 }
 #endif

@@ -13,18 +13,81 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\glog">
+      <UniqueIdentifier>{101c1f9b-9bc0-4217-951a-c7a8a086cb9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\json">
+      <UniqueIdentifier>{246974f9-8e8c-4bff-ac43-cbfcc6f966fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\glog">
+      <UniqueIdentifier>{2ba0c0a9-9894-48da-bfb2-bea6c3b77a50}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="third_party\json\json.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="src\config\config.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\json\json.h">
+      <Filter>头文件\json</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\glog\glog\log_severity.h">
+      <Filter>头文件\glog</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\glog\glog\logging.h">
+      <Filter>头文件\glog</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\glog\glog\raw_logging.h">
+      <Filter>头文件\glog</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\glog\glog\stl_logging.h">
+      <Filter>头文件\glog</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\glog\glog\vlog_is_on.h">
+      <Filter>头文件\glog</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\glog\config.h">
+      <Filter>头文件\glog</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\glog\windows\dirent.h">
+      <Filter>头文件\glog</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\glog\symbolize.h">
+      <Filter>头文件\glog</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\glog\utilities.h">
+      <Filter>头文件\glog</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\glog\stacktrace.h">
+      <Filter>头文件\glog</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\glog\logging.cc">
+      <Filter>源文件\glog</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\glog\demangle.cc">
+      <Filter>源文件\glog</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\glog\port.cc">
+      <Filter>源文件\glog</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\glog\raw_logging.cc">
+      <Filter>源文件\glog</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\glog\vlog_is_on.cc">
+      <Filter>源文件\glog</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\glog\utilities.cc">
+      <Filter>源文件\glog</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\glog\signalhandler.cc">
+      <Filter>源文件\glog</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\glog\symbolize.cc">
+      <Filter>源文件\glog</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
