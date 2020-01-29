@@ -139,6 +139,7 @@
     <ClInclude Include="third_party\json\json.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="net.h" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="third_party\glog\demangle.cc" />
     <ClCompile Include="third_party\glog\logging.cc" />
@@ -148,6 +149,9 @@
     <ClCompile Include="third_party\glog\symbolize.cc" />
     <ClCompile Include="third_party\glog\utilities.cc" />
     <ClCompile Include="third_party\glog\vlog_is_on.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

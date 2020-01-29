@@ -1,6 +1,6 @@
 #include "config/config.h"
 
-std::string ConfigFilePath = R"(C:\нд╪Ч\GitHub\TLib\TLib\config.json)";
+std::string ConfigFilePath = R"(C:\????\GitHub\TLib\TLib\config.json)";
 
 int main()
 {

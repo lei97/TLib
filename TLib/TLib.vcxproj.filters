@@ -22,11 +22,20 @@
     <Filter Include="源文件\glog">
       <UniqueIdentifier>{2ba0c0a9-9894-48da-bfb2-bea6c3b77a50}</UniqueIdentifier>
     </Filter>
+    <Filter Include="其他文件">
+      <UniqueIdentifier>{b8eda64d-361d-4057-997e-b7e52c88c13a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\config">
+      <UniqueIdentifier>{6f27a842-8367-477e-8102-ac6090a91f42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\net">
+      <UniqueIdentifier>{4d0258b5-70dc-4d4f-a9a1-2dc4c192c9c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\base">
+      <UniqueIdentifier>{f3ae675d-3415-46ed-b0d6-6d41b1f3927b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\config\config.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="third_party\json\json.h">
       <Filter>头文件\json</Filter>
     </ClInclude>
@@ -60,6 +69,9 @@
     <ClInclude Include="third_party\glog\stacktrace.h">
       <Filter>头文件\glog</Filter>
     </ClInclude>
+    <ClInclude Include="src\config\config.h">
+      <Filter>头文件\base</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -89,5 +101,13 @@
     <ClCompile Include="third_party\glog\symbolize.cc">
       <Filter>源文件\glog</Filter>
     </ClCompile>
+    <ClCompile Include="net.h">
+      <Filter>头文件\base</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Filter>其他文件</Filter>
+    </None>
   </ItemGroup>
 </Project>
