@@ -72,6 +72,9 @@
     <ClInclude Include="src\config\config.h">
       <Filter>头文件\base</Filter>
     </ClInclude>
+    <ClInclude Include="ShareMem.h">
+      <Filter>头文件\base</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
