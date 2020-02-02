@@ -125,6 +125,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="ShareMem.h" />
     <ClInclude Include="src\config\config.h" />
     <ClInclude Include="third_party\glog\config.h" />
     <ClInclude Include="third_party\glog\glog\logging.h" />
